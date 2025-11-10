@@ -15,6 +15,9 @@ jobs:
 
       - name: Compile
         run: yarn && yarn build
+
+      - name: Echo when done
+        run: echo "Compile job completed"
   
   publish:
     needs: [ compile ]
